@@ -23,8 +23,7 @@ export default function Hero() {
           {/* Personal Section */}
           <div className="border-t border-foreground/20 pt-8 mt-10">
             <p className="text-base md:text-lg leading-relaxed opacity-80 font-light">
-              Beyond code, I'm passionate about continuous learning, snowboarding, sports (NFL, football, basketball), 
-              and lacrosse. And yes, I absolutely love dogs.
+              Beyond code, I'm passionate about continuous learning, snowboarding, sports . And yes, I absolutely love dogs.
             </p>
           </div>
         </div>
