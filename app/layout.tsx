@@ -17,7 +17,15 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
-          <ThemeToggle />
+          {/* Fixed Header */}
+          <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-background/80 backdrop-blur-sm">
+            <div className="max-w-6xl mx-auto flex justify-between items-center">
+              <a href="#" className="text-sm tracking-[0.2em] uppercase font-medium hover:opacity-70 transition-opacity">
+                Srivatsa Gadicherla
+              </a>
+              <ThemeToggle />
+            </div>
+          </header>
           {children}
         </ThemeProvider>
       </body>

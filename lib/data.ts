@@ -1,16 +1,10 @@
-export interface Company {
-  name: string
-  role: string
-  period: string
-  logo?: string
-}
-
 export interface Experience {
   company: string
   role: string
   location: string
   period: string
   bullets: string[]
+  logo?: string
 }
 
 export interface Certification {
@@ -25,27 +19,13 @@ export interface SkillCategory {
   items: string[]
 }
 
-export const companies: Company[] = [
-  {
-    name: 'Capgemini',
-    role: 'Software Engineer Intern',
-    period: 'June 2025 - October 2025',
-    logo: '/logos/CapGeminiLogo.png',
-  },
-  {
-    name: 'IONIX AI',
-    role: 'Software Engineer Intern (Cloud & AI Systems)',
-    period: 'May 2024 – June 2025',
-    logo: '/logos/IonixLogo.png',
-  },
-]
-
 export const experiences: Experience[] = [
   {
     company: 'Capgemini - Financial Services',
     role: 'Software Engineer Intern',
     location: 'Malvern, PA',
     period: 'June 2025 - October 2025',
+    logo: '/logos/CapGeminiLogo.png',
     bullets: [
       'Built and deployed a production AI-powered contact center platform using AWS (Amazon Connect, Lex V2, Lambda, Bedrock, S3, CloudWatch), supporting 24/7 customer service and reducing average customer wait times by 60–80%.',
       'Developed Retrieval-Augmented Generation (RAG) pipelines integrating vector search and enterprise knowledge bases, improving response accuracy and reducing hallucinations using Claude, Amazon Titan, and LLM validation layers.',
@@ -61,6 +41,7 @@ export const experiences: Experience[] = [
     role: 'Software Engineer Intern (Cloud & AI Systems)',
     location: 'Chester Springs, PA',
     period: 'May 2024 – June 2025',
+    logo: '/logos/IonixLogo.png',
     bullets: [
       'Designed, deployed, and maintained cloud-native backend infrastructure on AWS (EC2, IAM, VPC, Route 53, S3, ECS), supporting AI-powered production systems with high availability, scalability, and security.',
       'Built and optimized backend services using Java (Spring MVC) and Python, implementing data validation, business logic, and microservice-based workflows to support real-time and batch inference pipelines.',
