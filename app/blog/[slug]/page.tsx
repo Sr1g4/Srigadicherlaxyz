@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { compileMDX } from 'next-mdx-remote/rsc'
 import { getPostBySlug, getAllSlugs } from '@/lib/blog'
+import { siteUrl } from '@/lib/site'
 
 function formatDate(iso: string): string {
   if (!iso) return ''
@@ -22,9 +23,24 @@ export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params
   const post = getPostBySlug(slug)
   if (!post) return { title: 'Post not found' }
+  const title = `${post.title} | Blog | Srivatsa Gadicherla`
+  const url = `${siteUrl}/blog/${slug}`
   return {
-    title: `${post.title} | Blog | Srivatsa Gadicherla`,
+    title,
     description: post.excerpt,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description: post.excerpt,
+      url,
+      type: 'article',
+      publishedTime: post.date || undefined,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description: post.excerpt,
+    },
   }
 }
 

@@ -1,9 +1,17 @@
 import { getAllPosts } from '@/lib/blog'
 import BlogCard from '@/components/BlogCard'
+import { siteUrl } from '@/lib/site'
 
 export const metadata = {
-  title: 'Blog | Srivatsa Gadicherla',
+  title: 'Blog',
   description: 'Thoughts on cloud, AI systems, and software engineering.',
+  alternates: { canonical: `${siteUrl}/blog` },
+  openGraph: {
+    title: 'Blog | Srivatsa Gadicherla',
+    description: 'Thoughts on cloud, AI systems, and software engineering.',
+    url: `${siteUrl}/blog`,
+    type: 'website',
+  },
 }
 
 const STAGGER_DELAY_MS = 80
