@@ -4,8 +4,8 @@ import './globals.css'
 import ThemeToggle from '@/components/ThemeToggle'
 
 export const metadata: Metadata = {
-  title: 'Srivatsa Gadicherla - Software Engineer',
-  description: 'Software Engineer specializing in Cloud & AI Systems',
+  title: 'Hi Im Sri!',
+  description: 'Aspiring Software Engineer',
 }
 
 export default function RootLayout({
