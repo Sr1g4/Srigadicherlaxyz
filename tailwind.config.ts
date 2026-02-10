@@ -50,6 +50,10 @@ const config: Config = {
             filter: 'blur(0px)',
           },
         },
+        lineReveal: {
+          '0%': { transform: 'scaleX(0)', opacity: '0.6' },
+          '100%': { transform: 'scaleX(1)', opacity: '1' },
+        },
       },
       animation: {
         'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
@@ -57,12 +61,24 @@ const config: Config = {
         'gradient-shift': 'gradientShift 3s ease-in-out infinite',
         'illuminate': 'illuminate 2.5s ease-in-out infinite',
         'slide-in-glow': 'slideInGlow 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
+        'line-reveal': 'lineReveal 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both',
       },
       backgroundSize: {
         '200%': '200% 200%',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: 'var(--foreground)',
+            '--tw-prose-body': 'var(--foreground)',
+            '--tw-prose-headings': 'var(--foreground)',
+            '--tw-prose-links': 'var(--foreground)',
+            '--tw-prose-bold': 'var(--foreground)',
+          },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }
 export default config

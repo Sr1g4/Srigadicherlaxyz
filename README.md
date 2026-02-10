@@ -50,9 +50,12 @@ npm start
 ```
 /
 ├── app/
+│   ├── blog/
+│   │   ├── page.tsx        # Blog list
+│   │   └── [slug]/page.tsx # Single post
 │   ├── layout.tsx          # Root layout with theme provider
 │   ├── page.tsx            # Home page with all sections
-│   └── globals.css          # Global styles and typography
+│   └── globals.css         # Global styles and typography
 ├── components/
 │   ├── ThemeToggle.tsx     # Light/dark mode switch
 │   ├── Hero.tsx            # Introduction section
@@ -60,13 +63,20 @@ npm start
 │   ├── Certifications.tsx  # Certifications section
 │   ├── Skills.tsx          # Skills/technologies section
 │   └── Contact.tsx         # Contact information
+├── content/
+│   └── blog/               # MDX blog posts
 └── lib/
-    └── data.ts             # Resume data (experience, skills, etc.)
+    ├── data.ts             # Resume data (experience, skills, etc.)
+    └── blog.ts             # Blog helpers (getAllPosts, getPostBySlug)
 ```
 
 ## Customization
 
 Edit `lib/data.ts` to update your resume information. The data structure is straightforward and easy to modify.
+
+### Blog
+
+The blog is powered by MDX files in `content/blog/`. To add a post, create a new `.mdx` file there with frontmatter (`title`, `date`, `excerpt`; optional `draft: true`). Publishing is done by committing and deploying—no backend required.
 
 ## Tech Stack
 

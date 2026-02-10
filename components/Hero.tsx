@@ -3,6 +3,7 @@ import AnimatedTitle from './AnimatedTitle'
 import AIText from './AIText'
 
 const navLinks = [
+  { label: 'Blog', href: '#blog' },
   { label: 'Experience', href: '#experience' },
   { label: 'Skills', href: '#skills' },
   { label: 'Certifications', href: '#certifications' },
