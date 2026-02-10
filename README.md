@@ -76,7 +76,7 @@ Edit `lib/data.ts` to update your resume information. The data structure is stra
 
 ### Blog
 
-The blog is powered by MDX files in `content/blog/`. To add a post, create a new `.mdx` file there with frontmatter (`title`, `date`, `excerpt`; optional `draft: true`). Publishing is done by committing and deploying—no backend required.
+The blog is powered by MDX files in `content/blog/`. To add a post, create a new `.mdx` file there with frontmatter (`title`, `date`, `excerpt`; optional `draft: true`). Publishing is done by committing and deploying no backend required.
 
 ## Tech Stack
 

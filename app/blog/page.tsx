@@ -24,7 +24,7 @@ export default function BlogPage() {
             </h1>
             <div className="h-1 w-24 bg-foreground/30 rounded-full origin-left animate-line-reveal mb-6" />
             <p className="text-lg md:text-xl opacity-90 max-w-2xl leading-relaxed animate-fade-in-up [animation-fill-mode:backwards] [animation-delay:200ms]">
-              On building with AI and the cloud—clear, practical, and worth your time.
+              On building with AI and the cloud clear, practical, and worth your time.
             </p>
           </div>
         </div>

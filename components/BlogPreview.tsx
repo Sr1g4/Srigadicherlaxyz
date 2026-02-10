@@ -13,7 +13,7 @@ export default function BlogPreview() {
           <p className="text-sm tracking-[0.15em] uppercase font-medium opacity-70 mb-2">Writing</p>
           <h2 className="mb-3">Blog</h2>
           <p className="text-lg opacity-90 mb-10 max-w-2xl">
-            Cloud, AI systems, and building software—what I work on and learn. Pick a post and dive in.
+            Cloud, AI systems, and building software what I work on and learn. Pick a post and dive in.
           </p>
           {posts.length === 0 ? (
             <p className="text-base opacity-80 mb-8">No posts yet.</p>
