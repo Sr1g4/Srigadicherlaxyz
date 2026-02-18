@@ -91,3 +91,66 @@ h3 {
   animation: gradient-shift 3s ease-in-out infinite;
   background-size: 200% 200%;
 }
+
+/* Blog prose: readable tables and overflow */
+.prose {
+  --tw-prose-body: var(--foreground);
+}
+.prose table {
+  width: 100%;
+  min-width: 500px;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin: 1.25rem 0;
+}
+.prose thead {
+  border-bottom: 2px solid var(--foreground);
+}
+.prose th {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.prose td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dark .prose td {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+.prose tbody tr:hover td {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.dark .prose tbody tr:hover td {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.prose ul, .prose ol {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+}
+.prose li {
+  margin: 0.35rem 0;
+}
+.prose li::marker {
+  color: var(--foreground);
+  opacity: 0.7;
+}
+.prose p {
+  margin: 0.75rem 0;
+}
+.prose h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.25rem;
+}
+.prose h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.prose blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--foreground);
+  opacity: 0.9;
+}

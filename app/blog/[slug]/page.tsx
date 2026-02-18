@@ -82,7 +82,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             )}
             <div className="h-px bg-foreground/10 mt-8 animate-fade-in-up [animation-fill-mode:backwards] [animation-delay:350ms]" />
           </header>
-          <div className="prose prose-neutral dark:prose-invert max-w-none prose-headings:font-semibold prose-p:leading-relaxed prose-p:opacity-90 prose-a:border-b prose-a:border-foreground/40 hover:prose-a:border-foreground/80 prose-strong:font-semibold animate-fade-in-up [animation-fill-mode:backwards] [animation-delay:400ms]">
+          <div className="prose prose-neutral dark:prose-invert max-w-none prose-headings:font-semibold prose-p:leading-relaxed prose-p:opacity-90 prose-a:border-b prose-a:border-foreground/40 hover:prose-a:border-foreground/80 prose-strong:font-semibold animate-fade-in-up [animation-fill-mode:backwards] [animation-delay:400ms] overflow-x-auto">
             {content}
           </div>
         </div>
