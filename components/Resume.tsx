@@ -15,7 +15,7 @@ export default function Resume() {
                 </p>
                 <div className="flex justify-center">
                   <a
-                    href="/resume/Srivatsa-Gadicherla-Resume.docx"
+                    href="/resume/Resume-SriGadicherla.docx"
                     download
                     className="inline-flex items-center px-8 py-4 border-2 border-foreground/30 hover:border-foreground/60 hover:bg-foreground/5 active:bg-foreground/10 transition-all duration-300 rounded-lg font-medium group"
                   >
